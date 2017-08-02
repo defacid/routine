@@ -4,6 +4,7 @@ html, body, p, h1, h2, h3, h4, h5 {
     font-family: Sans-serif;
     color: #444;
     letter-spacing: 1px;
+    overflow-x: hidden;
 }
 
 h2 {
@@ -18,6 +19,7 @@ h2 {
 }
 
 .timeline {
+    z-index: 2;
     position: absolute;
     top: 4em;
     left: 0;
@@ -27,7 +29,7 @@ h2 {
 }
 
 #marker {
-    z-index: 2;
+    z-index: 4;
     position: absolute;
     top: -0.4em;
     left: 11vw;
@@ -59,7 +61,7 @@ h2 {
 }
 
 .section {
-    z-index: 1;
+    z-index: 3;
     position: absolute;
     top: -0.7em;
     height: 1.5em;
@@ -104,7 +106,9 @@ h2 {
 /*Event List init*/
 
 .eventList {
-    margin-top: 1em;
+    position: absolute;
+    top: 4em;
+    left: 0;
     padding-top: 4em;
     padding-bottom: 1em;
     width: 100%;

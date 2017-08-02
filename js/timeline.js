@@ -6,10 +6,11 @@ function moveMarker() {
     if (mm < 10) mm = "0" + mm;
     var time = date.getTime();
 
-    document.getElementById("timeStamp").innerHTML = "" + hh + ":" + mm;
-    //document.getElementById("timeStamp").innerHTML = "" + time/1000 % 86400 / 86400 * 100;
+    //var markerPosition = 0;
+    var markerPosition = time/100 % 86400 / 86400 * 100;
 
-    var markerPosition = time/1000 % 86400 / 86400 * 100;
+    document.getElementById("timeStamp").innerHTML = "" + hh + ":" + mm;
+    //document.getElementById("timeStamp").innerHTML = markerPosition;
 
     document.getElementById("marker").style.left = markerPosition + "vw";
 }
