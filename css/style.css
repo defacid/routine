@@ -73,7 +73,7 @@ h2 {
     height: 1.5em;
     background: #ccc;
     border-radius: 1em;
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
 /* Test item positions*/
@@ -124,15 +124,17 @@ h2 {
     position: relative;
     margin: 0.75em 2em;
     padding: 1em;
+    opacity: 0.75;
     border-radius: 0.5em;
 }
 
-.eventList div .streak {
+.streak {
     position: absolute;
     top: 50%;
     right: 1em;
     font-size: 2em;
     font-weight: 700;
+    opacity: 0.5;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -143,8 +145,13 @@ h2 {
     margin-bottom: 0.25em;
 }
 
+#footer {
+    text-align: center;
+}
+
 /* Now Changes */
 .now {
+    opacity: 1;
     box-shadow: -2px 0 0 #444,
                 0 2px 0 #444,
                 0 -2px 0 #444,
@@ -154,11 +161,18 @@ h2 {
 .section.now {
     top: -0.9em;
     height: 2em;
+    opacity: 0.75;
 }
 
 .eventList .now {
+    opacity: 1;
 }
 
+.now .streak {
+    color: #fff;
+    opacity: .75;
+    text-shadow: 1px 1px 2px #000;
+}
 /*TEST ITEM LIST*/
 
 .item {
